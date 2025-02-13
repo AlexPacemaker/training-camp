@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Бесконечный скролл изображений</title>
     <script src="./src/script.js" defer></script>
+    <script type="module" src="./src/custom-loader.js" defer></script>
     <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
     <div class="image-container" id="image-container"></div>
-    <div class="loader" id="loader">Загрузка...</div>
+    <div class="loader-wrapper">
+      <custom-loader class="loader" id="loader">Загрузка...</custom-loader>
+    </div>
   </body>
 </html>
