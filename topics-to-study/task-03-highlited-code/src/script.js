@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   addCodeButton.addEventListener("click", () => {
     const exampleCode = `
+    Функция greet принимает имя и возвращает приветствие
 function greet(name) {
   return 'Hello, ' + name + '!';
 }

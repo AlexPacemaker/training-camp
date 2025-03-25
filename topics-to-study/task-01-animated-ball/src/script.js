@@ -30,8 +30,13 @@ const dropBall = () => {
       velocityX *= bounceFactor;
     }
 
-    if (positionX < 0) positionX = 0;
-    if (positionX > window.innerWidth - ball.offsetWidth) positionX = window.innerWidth - ball.offsetWidth;
+    if (positionX < 0) {
+      positionX = 0;
+    }
+
+    if (positionX > window.innerWidth - ball.offsetWidth) {
+      positionX = window.innerWidth - ball.offsetWidth;
+    }
 
     ball.style.transform = `translateY(${positionY}px)`;
     ball.style.left = positionX + "px";
@@ -42,5 +47,6 @@ const dropBall = () => {
       isFalling = false;
     }
   };
+
   requestAnimationFrame(fall);
 };
